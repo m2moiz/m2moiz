@@ -2,5 +2,4 @@
 
 ------
 *A perception engineer with a passion for autonomous drones, killer robots, computer vision wizardry and exploding cats*
-  [Portfolio Site](http://madebymoiz.com) · [Blog](https://moizilla.com) · [Twitter](https://twitter.com/m2moiz) {align=center}
 ------
