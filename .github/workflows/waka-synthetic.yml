@@ -1,0 +1,61 @@
+name: WakaTime synthetic
+
+# Drops synthetic-but-realistic coding stats into README.md between
+#   <!--START_SECTION:waka--> / <!--END_SECTION:waka--> markers
+# and refreshes the shield badge between
+#   <!--START_SECTION:wakabadge--> / <!--END_SECTION:wakabadge--> markers.
+#
+# Driven by scripts/generate-waka.py — see the script's docstring for the
+# persona and drift model. The script also queries GitHub's public events
+# API and boosts the numbers when real activity (hackathon, bug-fix sprint)
+# is detected, so the widget trends with your actual work.
+#
+# Runs every 6 hours so hackathon-level activity shows up same-day.
+# Values are seeded by ISO week, so within a week the numbers are stable.
+
+on:
+  schedule:
+    - cron: "7 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate-waka.py"
+      - ".github/workflows/waka-synthetic.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: waka-synthetic
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run synthesizer
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate-waka.py
+
+      - name: Commit refresh (if changed)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md data/waka-state.json
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore(waka): refresh synthetic stats"
+            git push
+          fi
