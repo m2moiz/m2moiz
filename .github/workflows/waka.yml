@@ -1,0 +1,51 @@
+name: WakaTime stats
+
+# Updates README.md between <!--START_SECTION:waka--> markers with:
+#   - Code-time-of-day breakdown (Morning/Daytime/Evening/Night)
+#   - Weekly language/editor/OS totals
+#   - Commit chart and timezone info
+#
+# Prerequisites (one-time):
+#   1. Create a WakaTime account at https://wakatime.com and install the editor plugin
+#      for every editor/IDE you code in (VS Code, JetBrains, vim, etc.).
+#   2. Grab your API key from https://wakatime.com/settings/account
+#   3. Add a repo secret named WAKATIME_API_KEY in Settings → Secrets → Actions
+#      → New repository secret. Paste the API key as the value.
+#   4. Also add a GH_TOKEN secret — a fine-grained personal access token with
+#      "Contents: read/write" on your profile repo (needed so the Action can commit
+#      README updates back to the repo).
+#   5. (Optional) Push a commit to main to trigger the first run, or run
+#      `gh workflow run waka.yml` manually.
+
+on:
+  schedule:
+    # Runs once a day at 00:05 UTC. WakaTime aggregates daily, so more-frequent
+    # runs don't help — they just burn Actions minutes.
+    - cron: "5 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    name: Refresh WakaTime section
+    runs-on: ubuntu-latest
+    steps:
+      - uses: anmol098/waka-readme-stats@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          SHOW_OS: "True"
+          SHOW_PROJECTS: "True"
+          SHOW_TIMEZONE: "True"
+          SHOW_LANGUAGE: "True"
+          SHOW_EDITORS: "True"
+          SHOW_COMMIT: "True"
+          SHOW_DAYS_OF_WEEK: "True"
+          SHOW_LANGUAGE_PER_REPO: "False"
+          SHOW_LOC_CHART: "False"
+          SHOW_PROFILE_VIEWS: "False"
+          SHOW_TOTAL_CODE_TIME: "True"
+          COMMIT_BY_ME: "True"
+          COMMIT_MESSAGE: "chore: refresh WakaTime stats"
