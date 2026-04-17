@@ -21,7 +21,7 @@
   animated block.
 -->
 <div align="center">
-  <img src="./assets/terminal.svg" alt="m2moiz terminal session. Hello, World! — moiz here. I work on computer vision, generative AI, and robotics/IoT, mostly where they overlap. Recent commits: int8 quantization −40% latency on jetson; vLLM routing layer with fallback chain; one redacted commit." width="760"/>
+  <img src="./assets/terminal.svg?v=2" alt="m2moiz terminal session. Hello, World! — moiz here. I work on computer vision, generative AI, and robotics/IoT, mostly where they overlap." width="760"/>
 </div>
 
 <p>

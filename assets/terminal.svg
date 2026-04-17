@@ -1,63 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" width="760" height="330" role="img" aria-label="m2moiz terminal session. Hello, World — moiz here. I work on computer vision, generative AI, and robotics/IoT, mostly where they overlap. Recent commits: int8 quantization −40% latency on jetson; vLLM routing layer with fallback chain; one redacted commit.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 170" width="760" height="170" role="img" aria-label="m2moiz terminal session. Hello, World — moiz here. I work on computer vision, generative AI, and robotics/IoT, mostly where they overlap.">
   <title>m2moiz terminal session</title>
 
   <!--
     Color legend:
       #7AA2F7 blue    — prompt user + "moiz" name highlight in greeting
       #7DCFFF cyan    — path (~), shell flags
-      #9ECE6A green   — shell commands, + diff marker
-      #F7768E red     — − diff marker
-      #E0AF68 yellow  — git commit scope tags
+      #9ECE6A green   — shell commands
       #C0CAF5 white   — regular text output
       #565F89 gray    — all punctuation, chrome text
-      #414868 dim     — redaction blocks
+
+    Animation model: one-shot. Plays once on page load, then holds with a
+    blinking cursor forever. No 20s loop, no clear command. Matches the
+    quote banner's "type once, presence preserved" pattern.
   -->
 
   <defs>
-    <!-- All clipPaths share a 20s loop. `values` list: 0 → width → width → 0 → 0
-         uses fill="freeze" effect via the kick-back to 0 at keyTime 0.731 so that
-         when cmd3 "clear" runs, everything width-clipped simultaneously wipes. -->
-
-    <!-- cmd1: "cat about.txt" (13 chars) — types 1.6s-1.6s  -->
-    <clipPath id="cmd1"><rect x="0" y="0" width="0" height="400">
-      <animate attributeName="width" values="0;120;120;0;0" keyTimes="0;0.08;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
+    <!-- cmd1: "cat about.txt" (13 chars) — types over 1.2s, begins at 0.3s -->
+    <clipPath id="cmd1"><rect x="0" y="0" width="0" height="200">
+      <animate attributeName="width" from="0" to="120" begin="0.3s" dur="1.2s" fill="freeze"/>
     </rect></clipPath>
 
-    <!-- Greeting: 3 lines, reveal sequentially 1.8s-3.0s -->
-    <clipPath id="g1"><rect x="0" y="0" width="0" height="400">
-      <animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.09;0.11;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
-    </rect></clipPath>
-    <clipPath id="g2"><rect x="0" y="0" width="0" height="400">
-      <animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.11;0.13;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
-    </rect></clipPath>
-    <clipPath id="g3"><rect x="0" y="0" width="0" height="400">
-      <animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.13;0.15;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
+    <!-- Greeting line 1 reveal: starts 1.7s, 0.4s long -->
+    <clipPath id="g1"><rect x="0" y="0" width="0" height="200">
+      <animate attributeName="width" from="0" to="750" begin="1.7s" dur="0.4s" fill="freeze"/>
     </rect></clipPath>
 
-    <!-- cmd2: git log command with flags (33 chars) — types 5.0s-7.6s -->
-    <clipPath id="cmd2"><rect x="0" y="0" width="0" height="400">
-      <animate attributeName="width" values="0;0;310;310;0;0" keyTimes="0;0.25;0.38;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
-    </rect></clipPath>
-
-    <!-- Git log: 3 lines, reveal 7.8s-9.0s -->
-    <clipPath id="gl1"><rect x="0" y="0" width="0" height="400">
-      <animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.39;0.41;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
-    </rect></clipPath>
-    <clipPath id="gl2"><rect x="0" y="0" width="0" height="400">
-      <animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.41;0.43;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
-    </rect></clipPath>
-    <clipPath id="gl3"><rect x="0" y="0" width="0" height="400">
-      <animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.43;0.45;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
-    </rect></clipPath>
-
-    <!-- cmd3: "clear" (5 chars) — types 13.0s-13.4s, then wipes everything at 14.6s -->
-    <clipPath id="cmd3"><rect x="0" y="0" width="0" height="400">
-      <animate attributeName="width" values="0;0;50;50;0;0" keyTimes="0;0.65;0.67;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
+    <!-- Greeting line 2 reveal: starts 2.1s, 0.6s long (it's longer text) -->
+    <clipPath id="g2"><rect x="0" y="0" width="0" height="200">
+      <animate attributeName="width" from="0" to="750" begin="2.1s" dur="0.6s" fill="freeze"/>
     </rect></clipPath>
   </defs>
 
   <!-- Window chrome -->
-  <rect width="760" height="330" rx="10" fill="#1A1B26"/>
+  <rect width="760" height="170" rx="10" fill="#1A1B26"/>
   <rect width="760" height="30" rx="10" fill="#24283B"/>
   <rect y="18" width="760" height="12" fill="#24283B"/>
   <circle cx="18" cy="15" r="6" fill="#F7768E"/>
@@ -67,7 +42,7 @@
 
   <g font-family="'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#C0CAF5">
 
-    <!-- Prompt 1 (static; stays visible through post-clear empty state) -->
+    <!-- Prompt 1 (static) -->
     <text x="16" y="60">
       <tspan fill="#7AA2F7">m2moiz</tspan><tspan fill="#565F89">:</tspan><tspan fill="#7DCFFF">~</tspan><tspan fill="#565F89"> $</tspan>
     </text>
@@ -77,87 +52,36 @@
       <text y="18"><tspan fill="#9ECE6A">cat</tspan> <tspan fill="#C0CAF5">about.txt</tspan></text>
     </g>
 
-    <!-- Cursor 1: tracks cmd1 typing, hides once cmd done -->
+    <!-- Cursor 1: visible from 0.3s (cmd start) to 1.6s (cmd done), moves with typing -->
     <rect y="47" x="88" width="8" height="16" fill="#C0CAF5" opacity="0">
-      <animate attributeName="x" values="88;208;208" keyTimes="0;0.08;1" dur="20s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.001;0.18;0.19;1" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" from="0" to="1" begin="0.3s" dur="0.01s" fill="freeze"/>
+      <animate attributeName="x" from="88" to="208" begin="0.3s" dur="1.2s" fill="freeze"/>
+      <animate attributeName="opacity" from="1" to="0" begin="1.6s" dur="0.01s" fill="freeze"/>
       <animate attributeName="fill-opacity" values="1;0;1" dur="0.55s" repeatCount="indefinite"/>
     </rect>
 
-    <!-- ─────────── Greeting output (3 lines) ─────────── -->
-
-    <!-- Line 1: Hello, World! — moiz here.   [moiz in blue, matching the prompt identity] -->
+    <!-- Greeting line 1: Hello, World! — moiz here. (moiz in blue) -->
     <g clip-path="url(#g1)"><text x="16" y="90">
       <tspan fill="#C0CAF5">Hello, World!</tspan><tspan fill="#565F89"> — </tspan><tspan fill="#7AA2F7">moiz</tspan><tspan fill="#C0CAF5"> here</tspan><tspan fill="#565F89">.</tspan>
     </text></g>
 
-    <!-- Line 2: I work on computer vision, generative AI, and -->
+    <!-- Greeting line 2: I work on computer vision, generative AI, and robotics/IoT — mostly where they overlap. -->
     <g clip-path="url(#g2)"><text x="16" y="110">
-      <tspan fill="#C0CAF5">I work on computer vision</tspan><tspan fill="#565F89">,</tspan> <tspan fill="#C0CAF5">generative AI</tspan><tspan fill="#565F89">,</tspan> <tspan fill="#C0CAF5">and</tspan>
+      <tspan fill="#C0CAF5">I work on computer vision</tspan><tspan fill="#565F89">,</tspan> <tspan fill="#C0CAF5">generative AI</tspan><tspan fill="#565F89">,</tspan> <tspan fill="#C0CAF5">and robotics/IoT</tspan><tspan fill="#565F89"> — </tspan><tspan fill="#C0CAF5">mostly where they overlap</tspan><tspan fill="#565F89">.</tspan>
     </text></g>
 
-    <!-- Line 3: robotics/IoT — mostly where they overlap. -->
-    <g clip-path="url(#g3)"><text x="16" y="130">
-      <tspan fill="#C0CAF5">robotics/IoT</tspan><tspan fill="#565F89"> — </tspan><tspan fill="#C0CAF5">mostly where they overlap</tspan><tspan fill="#565F89">.</tspan>
-    </text></g>
-
-    <!-- ─────────── Prompt 2 + cmd2 ─────────── -->
-
+    <!-- Final prompt: appears after greeting finishes at t=2.7s -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.199;0.2;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
-      <text x="16" y="165">
+      <animate attributeName="opacity" from="0" to="1" begin="2.8s" dur="0.15s" fill="freeze"/>
+      <text x="16" y="145">
         <tspan fill="#7AA2F7">m2moiz</tspan><tspan fill="#565F89">:</tspan><tspan fill="#7DCFFF">~</tspan><tspan fill="#565F89"> $</tspan>
       </text>
     </g>
 
-    <!-- Cmd2: git log command with flags and pipe -->
-    <g clip-path="url(#cmd2)" transform="translate(88 147)">
-      <text y="18"><tspan fill="#9ECE6A">git</tspan> <tspan fill="#C0CAF5">log</tspan> <tspan fill="#7DCFFF">--all</tspan> <tspan fill="#7DCFFF">--oneline</tspan> <tspan fill="#565F89">|</tspan> <tspan fill="#9ECE6A">head</tspan> <tspan fill="#7DCFFF">-3</tspan></text>
-    </g>
-
-    <rect y="152" x="88" width="8" height="16" fill="#C0CAF5" opacity="0">
-      <animate attributeName="x" values="88;88;398;398" keyTimes="0;0.25;0.38;1" dur="20s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.199;0.2;0.389;0.39;1" dur="20s" repeatCount="indefinite"/>
-      <animate attributeName="fill-opacity" values="1;0;1" dur="0.55s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- ─────────── Git log output — scope tags yellow, rest white ─────────── -->
-
-    <g clip-path="url(#gl1)"><text x="16" y="195">
-      <tspan fill="#9ECE6A">+</tspan> <tspan fill="#E0AF68">exp(cv)</tspan><tspan fill="#565F89">:</tspan> <tspan fill="#C0CAF5">int8 quantization −40% latency on jetson</tspan>
-    </text></g>
-
-    <g clip-path="url(#gl2)"><text x="16" y="215">
-      <tspan fill="#9ECE6A">+</tspan> <tspan fill="#E0AF68">feat(llm)</tspan><tspan fill="#565F89">:</tspan> <tspan fill="#C0CAF5">vLLM routing layer with fallback chain</tspan>
-    </text></g>
-
-    <g clip-path="url(#gl3)"><text x="16" y="235">
-      <tspan fill="#F7768E">-</tspan> <tspan fill="#E0AF68">feat</tspan><tspan fill="#565F89">:</tspan> <tspan fill="#414868">██████████████████████</tspan> <tspan fill="#565F89">[</tspan><tspan fill="#C0CAF5">redacted</tspan><tspan fill="#565F89">]</tspan>
-    </text></g>
-
-    <!-- ─────────── Prompt 3 + cmd3 "clear" ─────────── -->
-
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.459;0.46;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
-      <text x="16" y="270">
-        <tspan fill="#7AA2F7">m2moiz</tspan><tspan fill="#565F89">:</tspan><tspan fill="#7DCFFF">~</tspan><tspan fill="#565F89"> $</tspan>
-      </text>
-    </g>
-
-    <g clip-path="url(#cmd3)" transform="translate(88 252)">
-      <text y="18"><tspan fill="#9ECE6A">clear</tspan></text>
-    </g>
-
-    <rect y="257" x="88" width="8" height="16" fill="#C0CAF5" opacity="0">
-      <animate attributeName="x" values="88;88;143;143" keyTimes="0;0.65;0.67;1" dur="20s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.459;0.46;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
-      <animate attributeName="fill-opacity" values="1;0;1" dur="0.55s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- Empty-terminal cursor after clear (prompt 1 is always visible above, so together this reads as a fresh cleared terminal) -->
-    <rect y="47" x="88" width="8" height="16" fill="#C0CAF5" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.731;0.732;0.95;1" dur="20s" repeatCount="indefinite"/>
-      <animate attributeName="fill-opacity" values="1;0;1" dur="0.55s" repeatCount="indefinite"/>
+    <!-- Final cursor: appears with prompt, blinks forever (matches quote banner) -->
+    <rect x="88" y="132" width="8" height="16" fill="#C0CAF5" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="2.9s" dur="0.01s" fill="freeze"/>
+      <animate attributeName="fill-opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" begin="2.9s" dur="1.1s" repeatCount="indefinite"/>
     </rect>
 
   </g>
