@@ -1,0 +1,90 @@
+name: Spotify widget
+
+# Refreshes dist/spotify.svg every 5 min from the Spotify Web API, then
+# adds it (non-destructively) to the `output` branch alongside the snake SVGs.
+#
+# Secrets required (Settings → Secrets and variables → Actions):
+#   SPOTIFY_CLIENT_ID
+#   SPOTIFY_CLIENT_SECRET
+#   SPOTIFY_REFRESH_TOKEN
+# See scripts/get-spotify-token.py for a one-shot helper that produces them.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate-spotify.py"
+      - ".github/workflows/spotify.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: spotify
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Guard on secrets
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        run: |
+          if [ -z "$SPOTIFY_CLIENT_ID" ] || [ -z "$SPOTIFY_CLIENT_SECRET" ] || [ -z "$SPOTIFY_REFRESH_TOKEN" ]; then
+            echo "::warning::Spotify secrets not configured — skipping run"
+            echo "SKIP=1" >> "$GITHUB_ENV"
+          fi
+
+      - name: Generate SVG
+        if: env.SKIP != '1'
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        run: python scripts/generate-spotify.py
+
+      - name: Publish to output branch (additive — preserves snake SVGs)
+        if: env.SKIP != '1'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Fetch the output branch if it exists
+          git fetch origin output --depth=1 || echo "(output branch not yet created)"
+
+          # Make a worktree at ./output-tree
+          rm -rf output-tree
+          if git rev-parse --verify origin/output >/dev/null 2>&1; then
+            git worktree add output-tree origin/output
+          else
+            git worktree add --detach output-tree
+            (cd output-tree && git checkout --orphan output && git rm -rf . 2>/dev/null || true)
+          fi
+
+          cp dist/spotify.svg output-tree/spotify.svg
+
+          cd output-tree
+          git add spotify.svg
+          if git diff --cached --quiet; then
+            echo "spotify.svg unchanged — no commit"
+          else
+            git commit -m "chore(spotify): refresh widget"
+            # Re-use the default GITHUB_TOKEN authentication (origin already uses it
+            # since we checked out with actions/checkout@v4).
+            git push origin HEAD:output
+          fi
