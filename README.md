@@ -32,12 +32,12 @@
 ### 🎧 On repeat right now
 
 <!--
-  Spotify "Now Playing" widget, powered by kittinan/spotify-github-profile.
-  To swap themes (novatorem / natemoo-re / compact / default), re-authorize at
-  https://spotify-github-profile.kittinanx.com/ and replace the URL below.
+  Spotify "Now Playing" widget — big (640x200) format, rendered by our own
+  GitHub Action (.github/workflows/spotify.yml). Lives on the `output` branch
+  alongside the snake SVGs.
 -->
 <a href="https://open.spotify.com/user/12135894701">
-  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=12135894701&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=true" alt="Spotify Now Playing"/>
+  <img src="https://raw.githubusercontent.com/m2moiz/m2moiz/output/spotify.svg" alt="Spotify Now Playing" width="640"/>
 </a>
 
 ---
