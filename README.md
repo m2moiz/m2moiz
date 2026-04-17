@@ -37,7 +37,7 @@
 ![TypeScript](https://img.shields.io/badge/-TypeScript-000?logo=typescript)
 ![Kotlin](https://img.shields.io/badge/-Kotlin-000?logo=kotlin)
 ![Swift](https://img.shields.io/badge/-Swift-000?logo=swift)
-![SQL](https://img.shields.io/badge/-SQL-000)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-000?logo=postgresql&logoColor=FFFFFF)
 
 ### AI / ML
 
