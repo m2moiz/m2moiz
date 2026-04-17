@@ -27,6 +27,38 @@
   <a href="https://x.com/M2Moiz"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"/></a>
 </p>
 
+### Languages
+
+![Python](https://img.shields.io/badge/-Python-000?&logo=Python)
+![C++](https://img.shields.io/badge/-C%2B%2B-000?&logo=c%2B%2B&logoColor=00599C)
+![TypeScript](https://img.shields.io/badge/-TypeScript-000?&logo=TypeScript)
+![Kotlin](https://img.shields.io/badge/-Kotlin-000?&logo=Kotlin)
+![Swift](https://img.shields.io/badge/-Swift-000?&logo=Swift)
+![SQL](https://img.shields.io/badge/-SQL-000)
+
+### Machine Learning
+
+![PyTorch](https://img.shields.io/badge/-PyTorch-000?&logo=PyTorch)
+![Hugging Face](https://img.shields.io/badge/-Hugging%20Face-000?&logo=HuggingFace)
+![scikit-learn](https://img.shields.io/badge/-scikit--learn-000?&logo=scikit-learn)
+![pandas](https://img.shields.io/badge/-pandas-000?&logo=pandas&logoColor=FFFFFF)
+![OpenCV](https://img.shields.io/badge/-OpenCV-000?&logo=OpenCV)
+![LangChain](https://img.shields.io/badge/-LangChain-000?&logo=LangChain)
+![vLLM](https://img.shields.io/badge/-vLLM-000)
+![ONNX](https://img.shields.io/badge/-ONNX-000?&logo=ONNX)
+![TensorRT](https://img.shields.io/badge/-TensorRT-000?&logo=NVIDIA&logoColor=76B900)
+![NVIDIA Jetson](https://img.shields.io/badge/-NVIDIA%20Jetson-000?&logo=NVIDIA&logoColor=76B900)
+
+### Infrastructure
+
+![FastAPI](https://img.shields.io/badge/-FastAPI-000?&logo=FastAPI)
+![Docker](https://img.shields.io/badge/-Docker-000?&logo=Docker)
+![Kubernetes](https://img.shields.io/badge/-Kubernetes-000?&logo=Kubernetes)
+![Linux](https://img.shields.io/badge/-Linux-000?&logo=Linux&logoColor=FCC624)
+![AWS](https://img.shields.io/badge/-AWS-000?&logo=Amazon-AWS&logoColor=F90)
+![GCP](https://img.shields.io/badge/-GCP-000?&logo=Google-Cloud)
+![Android](https://img.shields.io/badge/-Android-000?&logo=Android&logoColor=3DDC84)
+
 ---
 
 ### 🎧 On repeat right now
@@ -111,14 +143,6 @@ Sunday        7 commits   ██░░░░░░░░░░░░░░░░
 ```
 <!--END_SECTION:waka-->
 
----
-
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-</p>
 
 <!--
   Snake animation of your GitHub contribution graph.
