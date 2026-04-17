@@ -29,35 +29,48 @@
 
 ### Languages
 
-![Python](https://img.shields.io/badge/-Python-000?&logo=Python)
-![C++](https://img.shields.io/badge/-C%2B%2B-000?&logo=c%2B%2B&logoColor=00599C)
-![TypeScript](https://img.shields.io/badge/-TypeScript-000?&logo=TypeScript)
-![Kotlin](https://img.shields.io/badge/-Kotlin-000?&logo=Kotlin)
-![Swift](https://img.shields.io/badge/-Swift-000?&logo=Swift)
+![Python](https://img.shields.io/badge/-Python-000?logo=python)
+![C++](https://img.shields.io/badge/-C%2B%2B-000?logo=cplusplus&logoColor=00599C)
+![TypeScript](https://img.shields.io/badge/-TypeScript-000?logo=typescript)
+![Kotlin](https://img.shields.io/badge/-Kotlin-000?logo=kotlin)
+![Swift](https://img.shields.io/badge/-Swift-000?logo=swift)
 ![SQL](https://img.shields.io/badge/-SQL-000)
 
-### Machine Learning
+### AI / ML
 
-![PyTorch](https://img.shields.io/badge/-PyTorch-000?&logo=PyTorch)
-![Hugging Face](https://img.shields.io/badge/-Hugging%20Face-000?&logo=HuggingFace)
-![scikit-learn](https://img.shields.io/badge/-scikit--learn-000?&logo=scikit-learn)
-![pandas](https://img.shields.io/badge/-pandas-000?&logo=pandas&logoColor=FFFFFF)
-![OpenCV](https://img.shields.io/badge/-OpenCV-000?&logo=OpenCV)
-![LangChain](https://img.shields.io/badge/-LangChain-000?&logo=LangChain)
+![PyTorch](https://img.shields.io/badge/-PyTorch-000?logo=pytorch)
+![Hugging Face](https://img.shields.io/badge/-Hugging%20Face-000?logo=huggingface)
+![scikit-learn](https://img.shields.io/badge/-scikit--learn-000?logo=scikitlearn)
+![pandas](https://img.shields.io/badge/-pandas-000?logo=pandas&logoColor=FFFFFF)
+![OpenCV](https://img.shields.io/badge/-OpenCV-000?logo=opencv)
+![LangChain](https://img.shields.io/badge/-LangChain-000?logo=langchain)
 ![vLLM](https://img.shields.io/badge/-vLLM-000)
-![ONNX](https://img.shields.io/badge/-ONNX-000?&logo=ONNX)
-![TensorRT](https://img.shields.io/badge/-TensorRT-000?&logo=NVIDIA&logoColor=76B900)
-![NVIDIA Jetson](https://img.shields.io/badge/-NVIDIA%20Jetson-000?&logo=NVIDIA&logoColor=76B900)
+![ONNX](https://img.shields.io/badge/-ONNX-000?logo=onnx)
+![TensorRT](https://img.shields.io/badge/-TensorRT-000?logo=nvidia&logoColor=76B900)
+![TensorRT-LLM](https://img.shields.io/badge/-TensorRT--LLM-000?logo=nvidia&logoColor=76B900)
+![CUDA](https://img.shields.io/badge/-CUDA-000?logo=nvidia&logoColor=76B900)
+![llama.cpp](https://img.shields.io/badge/-llama.cpp-000?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMi4wODEsMC4wMDApIHNjYWxlKDAuMDk4NDAxKSIgZmlsbD0iI2ZmZiI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsMjQzLjkwMDAwMCkgc2NhbGUoMC4wOTAwMDAsLTAuMDkwMDAwKSI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNzM0IDIzODkgYy0xMzQgLTUyIC0yMjUgLTE5MCAtMjc0IC00MTcgLTIyIC0xMDEgLTQ5IC00MDcgLTM3IC00MTkgNCAtNCAzMSAxNiA2MCA0NCA4OCA4NiAyMTAgMTU4IDM0OSAyMDYgMTUgNSAxNCAxMyAtMTUgNjggLTI0IDQ3IC0zMiA3NyAtMzUgMTMwIC00IDY4IC0zIDcyIDYzIDIwOCA0NSA5NSA2NSAxNDggNjMgMTY3IC0zIDI4IC01IDI5IC02MyAzMSAtNDEgMiAtNzcgLTQgLTExMSAtMTh6Ii8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTE2MCAyMjgzIGMtMTEyIC00MCAtMjIxIC0yMjEgLTI1NSAtNDIyIGwtNyAtNDMgNDMgOCBjMjQgNSAxMDQgOSAxNzcgOSA3MiAwIDEzMiAwIDEzMiAwIDAgMCAtMTEgMjcgLTI1IDYwIC00MiAxMDMgLTM2IDEzNSA0NSAyNTYgNDUgNjcgNjkgMTExIDY1IDEyMSAtMTIgMzEgLTEwMSAzNyAtMTc1IDExeiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTk2MiAxNzA5IGMtMjk2IC00OSAtNTU3IC0yODkgLTYzNyAtNTg0IC0yMiAtODQgLTMwIC0yNDYgLTE2IC0zMzEgNDAgLTIzMyAyMzQgLTQzMCA0NzMgLTQ4MCA5MCAtMTkgMjc1IC0xNCAzNjMgMTAgODAgMjIgMjM3IDk3IDIzMSAxMTAgLTIgNiAtMTcgNjIgLTMyIDEyNCAtMTUgNjEgLTMyIDExMiAtMzYgMTEyIC01IDAgLTMwIC0xMSAtNTYgLTI0IC0zNzEgLTE4NyAtNzAwIDIgLTY0NCAzNzEgNTUgMzYxIDQxNyA1MzQgNzM5IDM1MyAyOSAtMTcgNTcgLTMwIDYyIC0zMCA0IDAgMzkgNTIgNzUgMTE2IDc4IDEzNCA4MiAxMTggLTQ5IDE4NCAtMTM1IDY3IC0zMjAgOTQgLTQ3MyA2OXoiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMDYwIDExNzUgbDAgLTg1IC04MCAwIC04MCAwIDAgLTgwIDAgLTgwIDgwIDAgODAgMCAwIC04NSAwIC04NSA4MCAwIDgwIDAgMCA4NSAwIDg0IDgzIDMgODIgMyAzIDc4IDMgNzcgLTg2IDAgLTg1IDAgMCA4NSAwIDg1IC04MCAwIC04MCAwIDAgLTg1eiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE2MjAgMTE3NSBsMCAtODUgLTg1IDAgLTg2IDAgMyAtNzcgMyAtNzggODMgLTMgODIgLTMgMCAtODQgMCAtODUgODAgMCA4MCAwIDAgODUgMCA4NSA4MCAwIDgwIDAgMCA4MCAwIDgwIC04MCAwIC04MCAwIDAgODUgMCA4NSAtODAgMCAtODAgMCAwIC04NXoiLz48L2c+PC9nPjwvc3ZnPg==)
+![CoreML](https://img.shields.io/badge/-CoreML-000?logo=apple&logoColor=FFFFFF)
+![Weights & Biases](https://img.shields.io/badge/-Weights%20%26%20Biases-000?logo=weightsandbiases&logoColor=FFBE00)
 
 ### Infrastructure
 
-![FastAPI](https://img.shields.io/badge/-FastAPI-000?&logo=FastAPI)
-![Docker](https://img.shields.io/badge/-Docker-000?&logo=Docker)
-![Kubernetes](https://img.shields.io/badge/-Kubernetes-000?&logo=Kubernetes)
-![Linux](https://img.shields.io/badge/-Linux-000?&logo=Linux&logoColor=FCC624)
-![AWS](https://img.shields.io/badge/-AWS-000?&logo=Amazon-AWS&logoColor=F90)
-![GCP](https://img.shields.io/badge/-GCP-000?&logo=Google-Cloud)
-![Android](https://img.shields.io/badge/-Android-000?&logo=Android&logoColor=3DDC84)
+![FastAPI](https://img.shields.io/badge/-FastAPI-000?logo=fastapi)
+![Docker](https://img.shields.io/badge/-Docker-000?logo=docker)
+![Kubernetes](https://img.shields.io/badge/-Kubernetes-000?logo=kubernetes)
+![Linux](https://img.shields.io/badge/-Linux-000?logo=linux&logoColor=FCC624)
+![AWS](https://img.shields.io/badge/-AWS-232F3E)
+![GCP](https://img.shields.io/badge/-GCP-000?logo=googlecloud)
+![Android](https://img.shields.io/badge/-Android-000?logo=android&logoColor=3DDC84)
+
+### Robotics & Simulation
+
+![ROS](https://img.shields.io/badge/-ROS-000?logo=ros&logoColor=22314E)
+![Gazebo](https://img.shields.io/badge/-Gazebo-000?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAsMC4wMDApIHNjYWxlKDAuMTMzMzMzKSIgZmlsbD0iI2ZmZiI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsMTgwLjAwMDAwMCkgc2NhbGUoMC4wOTAwMDAsLTAuMDkwMDAwKSI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNjY1IDE3MjAgYy0xNzYgLTExMCAtMzQ2IC0yMTYgLTM3NyAtMjM2IGwtNTggLTM2IDAgLTQ0OCAwIC00NDcgNjMgLTQwIGMyMzUgLTE1MCA2OTcgLTQzMyA3MDcgLTQzMyAxMiAwIDI3NyAxNjIgNjk4IDQyNyBsNzIgNDUgMCAyMzkgMCAyMzkgLTI0IDE1IGMtMjkgMjAgLTE5IDI0IC0yMTIgLTk3IC03OCAtNDggLTE0NSAtODggLTE0OSAtODggLTEwIDAgLTIyNSAxMzQgLTIyNSAxNDAgMCAzIDEyNyA4NCAyODIgMTgwIDE1NSA5NiAyOTIgMTgzIDMwNSAxOTMgMzEgMjQgMzEgNzIgMSA5MCAtMTMgOCAtNTggMzYgLTEwMSA2MyAtNDI1IDI2NiAtNjM2IDM5NCAtNjQ5IDM5NCAtNyAtMSAtMTU3IC05MSAtMzMzIC0yMDB6IG0tNDIgLTU4MCBjMTE5IC03NCAyMTcgLTEzNyAyMTcgLTE0MCAwIC00IC0zMjQgLTIwOSAtNDcyIC0yOTggbC0zOCAtMjMgMCAzMjEgMCAzMjEgMzggLTIzIGMyMSAtMTMgMTM2IC04NCAyNTUgLTE1OHogbTM1NiAtMjIwIGMxMiAtNiAyOCAtNSA0OCAyIDI2IDEwIDM1IDggNjEgLTggMTcgLTEwIDY3IC00MSAxMTEgLTY4IDQ0IC0yNyA3OSAtNTIgNzYgLTU1IC0yIC00IC03MiAtNDkgLTE1NSAtMTAxIC04NCAtNTIgLTE1OSAtMTA0IC0xNjggLTExOCAtMTMgLTE5IC0xNCAtNDggLTkgLTE3OCA2IC0xNjQgNSAtMTY3IC00MSAtMTM1IC0xNSAxMCAtNDggMzEgLTc0IDQ3IC0yNiAxNiAtODAgNTAgLTEyMCA3NSAtNDAgMjUgLTEyNyA3OSAtMTkzIDExOSAtNjYgNDEgLTEyMiA3NiAtMTI1IDc4IC03IDUgMjYgMjkgMTE3IDg1IDQzIDI2IDE1NyA5NyAyNTMgMTU3IDE4MCAxMTMgMTg5IDExNyAyMTkgMTAweiBtNjkxIC0xNjMgbDAgLTE0MiAtMjMyIC0xNDQgYy0xMjggLTc5IC0yNjMgLTE2MyAtMzAwIC0xODcgLTM3IC0yNCAtNzIgLTQ0IC03OCAtNDQgLTcgMCAtMTAgNDcgLTggMTQyIGwzIDE0MyA2MCAzNyBjMzMgMjAgOTUgNTkgMTM3IDg1IDQyIDI2IDEzMSA4MiAxOTggMTIzIDY2IDQxIDE0MCA4NyAxNjMgMTAyIDIzIDE0IDQ1IDI3IDUwIDI3IDQgMSA3IC02MyA3IC0xNDJ6Ii8+PC9nPjwvZz48L3N2Zz4=)
+![CoppeliaSim](https://img.shields.io/badge/-CoppeliaSim-000?logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMCwwLjAwKSBzY2FsZSgwLjAyMDgpIiBmaWxsPSIjZmZmIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwxMTUyLjAwMDAwMCkgc2NhbGUoMC4yMjUwMDAsLTAuMjI1MDAwKSI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjM3NSA1MTE0IGMtMjE4MyAtMjIzIC0zMTYxIC0yNzY3IC0xNjYwIC00MzIyIDE0ODUgLTE1MzkgNDA3NyAtNjk3IDQzODIgMTQyMyAyMjcgMTU3OCAtMTE2MiAzMDU4IC0yNzIyIDI4OTl6IG01MDAgLTEyMCBjNDM4IC01NCA4NzYgLTI0MSAxMjIzIC01MjEgMTA4IC04OCAxMDMgLTc3IDQ2IC0xMDIgLTExOCAtNTMgLTI0MyAtMTcwIC00MDEgLTM3NiAtMjI4IC0yOTggLTM3NiAtNDE1IC01MjUgLTQxNSAtNTAgMCAtMTAgNTEgNTEgNjUgNzEgMTUgODcgMTg2IDIzIDI0MCAtMTggMTUgLTYwIDYzIC05MyAxMDYgLTc2IDEwMSAtODEgMTAzIC0xOTggOTYgLTE5MyAtMTEgLTMxMSAtNzYgLTMyNiAtMTc5IC0xMyAtODcgMTQgLTEyNyAxNTggLTIzNSAyODIgLTIxMiAtNTIgLTM0OSAtNjMxIC0yNjAgLTM1MyA1NSAtNTY3IDIwIC01NzAgLTkyIC0xIC00NiAxNCAtNDYgNjcgLTIgNTMgNDQgNzEgNDkgOTEgMjYgMTYgLTE5IDAgLTQwIC0zNSAtNDkgLTE0IC00IC0yNSAtMTEgLTI1IC0xNyAwIC02IDYgLTYgMTggMCA4OSA0OCAyMDAgMzYgNDUyIC00OSAyMzMgLTc5IDM3OCAtOTcgNDk5IC02NCAzMiA5IDI4IC0xNDggLTUgLTE5MyAtNzEgLTk0IC0xMzcgLTkzIC00ODkgMTAgLTg0IDI1IC0xNzMgNDEgLTI5NiA1NiAtMjEyIDI1IC0yNTYgMzkgLTM3NSAxMjYgLTE0NyAxMDggLTE3OSAxMTggLTUyOCAxNzQgLTE2NSAyNyAtMjI2IDU5IC0zODYgMjAyIC03NSA2NyAtMTQ2IDEyMiAtMTc3IDEzNiAtNjMgMjkgLTYxIDIyIC0yMSA5MiA0OTAgODY1IDE0NTcgMTM0OCAyNDUzIDEyMjV6IG0xNDA1IC02ODMgYzExMiAtODIgMzczIC00NDUgNDg1IC02NzYgNzc1IC0xNTkwIC0zMjEgLTM0MjkgLTIxMDIgLTM1MjggLTQwIC0zIC03MyAtMyAtNzMgLTIgMCAxIDEyIDI5IDI3IDYxIDM1IDc2IDQxIDE5NiAxOSAzODYgLTMzIDI4MyAtMjAgNDcyIDY1IDk1OSA2NSAzNzkgNzggNDcyIDg1IDY1OSA2IDE1NSA2IDE1NSAxMjggMjgwIDMxNiAzMjQgNDM1IDUzMyA0MzYgNzY3IDAgNjAgOCA3NiA1MyAxMDggMTM2IDk3IDI3MiAyNTcgNDg3IDU3NCAyMTggMzIxIDIyMyAzMjYgMjk4IDMyNiA0NSAwIDY2IDUgNzkgMTggMjIgMjEgNiAzNyAtMzggMzcgLTMxIDAgLTU0IDIzIC00NSA0NiA4IDIwIDU5IDEzIDk2IC0xNXogbS0zOTA3IC04NDcgYzY0IC03NSAyMjUgLTE1NiA0MjQgLTIxNSA3NSAtMjIgMTM0IC00OCAxOTcgLTg2IDMzNyAtMjA1IDc0OSAtNDMxIDEwOTEgLTYwMCAzMDMgLTE0OSAyNjYgLTQyIDI3MCAtNzc4IDMgLTY3MiAxNyAtODQxIDg0IC0xMDM4IDIwIC01NiAyMCAtNTYgLTI1IC0xMzQgLTUwIC04OCAtNTEgLTkzIC0yNCAtMTE4IDc3IC02OSA5MSAtMzg1IDE4IC0zODUgLTEyMDUgMCAtMjMwMCAxMTY2IC0yMzAwIDI0NTAgMCAzODQgMTU1IDEwNTggMjIwIDk2MCAxMCAtMTMgMjkgLTM5IDQ1IC01NnoiLz48L2c+PC9nPjwvc3ZnPg==)
+![Unity](https://img.shields.io/badge/-Unity-000?logo=unity)
+![Blender](https://img.shields.io/badge/-Blender-000?logo=blender&logoColor=F5792A)
+![NVIDIA Jetson](https://img.shields.io/badge/-NVIDIA%20Jetson-000?logo=nvidia&logoColor=76B900)
 
 ---
 
