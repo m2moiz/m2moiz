@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 130" width="800" height="130" role="img" aria-label='Every year in tech brings me one step closer to a mountain, a flock of goats, and a kettle. ~ m2moiz'>
-  <title>Every year in tech brings me one step closer to a mountain, a flock of goats, and a kettle. ~ m2moiz</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 130" width="800" height="130" role="img" aria-label='Every year in tech brings me one step closer to a mountain, a flock of goats, and no Wi-Fi. ~ m2moiz'>
+  <title>Every year in tech brings me one step closer to a mountain, a flock of goats, and no Wi-Fi. ~ m2moiz</title>
 
   <defs>
     <style>
@@ -38,7 +38,7 @@
 
   <!-- Line 2 -->
   <g clip-path="url(#reveal2)">
-    <text class="q" x="400" y="63" text-anchor="middle">a mountain, a flock of goats, and a kettle."</text>
+    <text class="q" x="400" y="63" text-anchor="middle">a mountain, a flock of goats, and no Wi-Fi."</text>
   </g>
 
   <!-- Blinking cursor: appears at ~5.7s (right after line 2 finishes) and blinks forever -->
