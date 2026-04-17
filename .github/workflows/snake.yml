@@ -1,0 +1,65 @@
+name: snake
+
+# Generates the animated "snake eating the contribution grid" SVGs and pushes
+# them to the `output` branch alongside spotify.svg.
+#
+# Uses a worktree + additive git push (NOT a full-replace action) so the
+# spotify.yml workflow's file on the same branch is preserved. Previously this
+# workflow used crazy-max/ghaction-github-pages@v4 which replaces the branch
+# contents wholesale — that clobbered spotify.svg.
+
+on:
+  schedule:
+    - cron: "43 3 * * *"   # daily ~03:43 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3
+        id: snake
+        with:
+          github_user_name: m2moiz
+          outputs: |
+            dist/github-snake.svg?palette=github-light
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#7AA2F7&color_dots=#1A1B26,#7AA2F7,#7DCFFF,#BB9AF7,#F7768E
+
+      - name: Publish to output branch (additive — preserves spotify.svg)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git fetch origin output --depth=1 || echo "(output branch not yet created)"
+
+          rm -rf output-tree
+          if git rev-parse --verify origin/output >/dev/null 2>&1; then
+            git worktree add output-tree origin/output
+          else
+            git worktree add --detach output-tree
+            (cd output-tree && git checkout --orphan output && git rm -rf . 2>/dev/null || true)
+          fi
+
+          cp dist/github-snake.svg       output-tree/github-snake.svg
+          cp dist/github-snake-dark.svg  output-tree/github-snake-dark.svg
+
+          cd output-tree
+          git add github-snake.svg github-snake-dark.svg
+          if git diff --cached --quiet; then
+            echo "snake SVGs unchanged — no commit"
+          else
+            git commit -m "chore(snake): refresh contribution animation"
+            git push origin HEAD:output
+          fi

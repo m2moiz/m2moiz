@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 170" width="760" height="170" role="img" aria-label="m2moiz terminal session. Hello, World — moiz here. I work on computer vision, generative AI, and robotics/IoT, mostly where they overlap.">
+  <title>m2moiz terminal session</title>
+
+  <!--
+    Color legend:
+      #7AA2F7 blue    — prompt user + "moiz" name highlight in greeting
+      #7DCFFF cyan    — path (~), shell flags
+      #9ECE6A green   — shell commands
+      #C0CAF5 white   — regular text output
+      #565F89 gray    — all punctuation, chrome text
+
+    Animation model: one-shot. Plays once on page load, then holds with a
+    blinking cursor forever. No 20s loop, no clear command. Matches the
+    quote banner's "type once, presence preserved" pattern.
+  -->
+
+  <defs>
+    <!-- cmd1: "cat about.txt" (13 chars) — types over 1.2s, begins at 0.3s -->
+    <clipPath id="cmd1"><rect x="0" y="0" width="0" height="200">
+      <animate attributeName="width" from="0" to="120" begin="0.3s" dur="1.2s" fill="freeze"/>
+    </rect></clipPath>
+
+    <!-- Greeting line 1 reveal: starts 1.7s, 0.4s long -->
+    <clipPath id="g1"><rect x="0" y="0" width="0" height="200">
+      <animate attributeName="width" from="0" to="750" begin="1.7s" dur="0.4s" fill="freeze"/>
+    </rect></clipPath>
+
+    <!-- Greeting line 2 reveal: starts 2.1s, 0.6s long (it's longer text) -->
+    <clipPath id="g2"><rect x="0" y="0" width="0" height="200">
+      <animate attributeName="width" from="0" to="750" begin="2.1s" dur="0.6s" fill="freeze"/>
+    </rect></clipPath>
+  </defs>
+
+  <!-- Window chrome -->
+  <rect width="760" height="170" rx="10" fill="#1A1B26"/>
+  <rect width="760" height="30" rx="10" fill="#24283B"/>
+  <rect y="18" width="760" height="12" fill="#24283B"/>
+  <circle cx="18" cy="15" r="6" fill="#F7768E"/>
+  <circle cx="38" cy="15" r="6" fill="#E0AF68"/>
+  <circle cx="58" cy="15" r="6" fill="#9ECE6A"/>
+  <text x="380" y="19" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace" font-size="11" fill="#565F89">m2moiz — profile</text>
+
+  <g font-family="'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#C0CAF5">
+
+    <!-- Prompt 1 (static) -->
+    <text x="16" y="60">
+      <tspan fill="#7AA2F7">m2moiz</tspan><tspan fill="#565F89">:</tspan><tspan fill="#7DCFFF">~</tspan><tspan fill="#565F89"> $</tspan>
+    </text>
+
+    <!-- Cmd1: cat about.txt -->
+    <g clip-path="url(#cmd1)" transform="translate(88 42)">
+      <text y="18"><tspan fill="#9ECE6A">cat</tspan> <tspan fill="#C0CAF5">about.txt</tspan></text>
+    </g>
+
+    <!-- Cursor 1: visible from 0.3s (cmd start) to 1.6s (cmd done), moves with typing -->
+    <rect y="47" x="88" width="8" height="16" fill="#C0CAF5" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="0.3s" dur="0.01s" fill="freeze"/>
+      <animate attributeName="x" from="88" to="208" begin="0.3s" dur="1.2s" fill="freeze"/>
+      <animate attributeName="opacity" from="1" to="0" begin="1.6s" dur="0.01s" fill="freeze"/>
+      <animate attributeName="fill-opacity" values="1;0;1" dur="0.55s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Greeting line 1: Hello, World! — moiz here. (moiz in blue) -->
+    <g clip-path="url(#g1)"><text x="16" y="90">
+      <tspan fill="#C0CAF5">Hello, World!</tspan><tspan fill="#565F89"> — </tspan><tspan fill="#7AA2F7">moiz</tspan><tspan fill="#C0CAF5"> here</tspan><tspan fill="#565F89">.</tspan>
+    </text></g>
+
+    <!-- Greeting line 2: I work on computer vision, generative AI, and robotics/IoT — mostly where they overlap. -->
+    <g clip-path="url(#g2)"><text x="16" y="110">
+      <tspan fill="#C0CAF5">I work on computer vision</tspan><tspan fill="#565F89">,</tspan> <tspan fill="#C0CAF5">generative AI</tspan><tspan fill="#565F89">,</tspan> <tspan fill="#C0CAF5">and robotics/IoT</tspan><tspan fill="#565F89"> — </tspan><tspan fill="#C0CAF5">mostly where they overlap</tspan><tspan fill="#565F89">.</tspan>
+    </text></g>
+
+    <!-- Final prompt: appears after greeting finishes at t=2.7s -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="2.8s" dur="0.15s" fill="freeze"/>
+      <text x="16" y="145">
+        <tspan fill="#7AA2F7">m2moiz</tspan><tspan fill="#565F89">:</tspan><tspan fill="#7DCFFF">~</tspan><tspan fill="#565F89"> $</tspan>
+      </text>
+    </g>
+
+    <!-- Final cursor: appears with prompt, blinks forever (matches quote banner) -->
+    <rect x="88" y="132" width="8" height="16" fill="#C0CAF5" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="2.9s" dur="0.01s" fill="freeze"/>
+      <animate attributeName="fill-opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" begin="2.9s" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+
+  </g>
+</svg>
