@@ -7,19 +7,22 @@
   <img src="./assets/hero-transparent.png" alt="profile hero" width="766"/>
 </div>
 
-# Hi there, I'm Muhammad — aka m2moiz <img src="https://github.com/SatYu26/SatYu26/raw/master/Assets/Hi.gif" width="30" alt="waving hand"/>
-
-### I'm an AI/ML Engineer
-
 <!--
-  Floating hero — Daft Punk Octocat from GitHub's official Octodex (https://octodex.github.com/).
-  The Octodex is GitHub's public mascot gallery, explicitly free for use on profiles.
-  Browse other octocats and swap the filename if you want a different one.
--->
-<img align="right" width="200" src="https://octodex.github.com/images/daftpunktocat-guy.gif" alt="Daft Punk Octocat"/>
+  Animated terminal intro — 20s looped SMIL SVG that simulates a terminal
+  session: prompt → `cat profile.yaml` (8 yaml fields type in sequentially)
+  → `git log --all --oneline | head -3` (with one redacted commit signaling
+  private work) → `clear` → empty cleared terminal → loops.
 
-- 🌱 &nbsp;Going deep on **Computer Vision, LLM systems, and on-device inference**
-- 📬 &nbsp;Best place to reach me: **[LinkedIn](https://www.linkedin.com/in/m2moiz/)**
+  Tokyo Night palette, JetBrains Mono. Self-contained client-side animation,
+  no hosted service dependency.
+
+  Replaces the previous H1 + H3 + bullets + Daft Punk Octocat combo. The
+  terminal IS the intro now; the octocat would visually compete with a big
+  animated block.
+-->
+<div align="center">
+  <img src="./assets/terminal.svg" alt="m2moiz terminal session. Hello, World! — moiz here. I work on computer vision, generative AI, and robotics/IoT, mostly where they overlap. Recent commits: int8 quantization −40% latency on jetson; vLLM routing layer with fallback chain; one redacted commit." width="760"/>
+</div>
 
 <p>
   <a href="https://github.com/m2moiz"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
