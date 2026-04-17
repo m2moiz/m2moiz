@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 410" width="760" height="410" role="img" aria-label="Muhammad Moiz. AI/ML Engineer based in France. Expertise in Computer Vision and LLM Systems. Strengths in edge deployment, model compression, and sub-100ms inference. Languages: C++, Python, TypeScript, Kotlin, Swift. ML stack: PyTorch, OpenCV, vLLM, LangChain. Platform: FastAPI, AWS, GCP, Docker, Android. Open to interesting problems.">
+  <title>m2moiz terminal session</title>
+
+  <!--
+    Color system (1 color = 1 meaning):
+      #7AA2F7 blue      prompt user/host
+      #7DCFFF cyan      identifiers: yaml keys, shell flags, ~ path
+      #9ECE6A green     + diff marker (git log only), valid shell commands
+      #F7768E red       - diff marker
+      #E0AF68 yellow    git commit scope tags (exp(cv), feat(llm), feat)
+      #C0CAF5 white     all values, arguments, generic text
+      #565F89 gray      ALL punctuation
+      #414868 dim       redaction blocks (██)
+  -->
+
+  <defs>
+    <!-- cmd1 typing duration: 7% of loop (~1.4s for 16 chars, ~87ms/char) -->
+    <clipPath id="cmd1"><rect x="0" y="0" width="0" height="400"><animate attributeName="width" values="0;140;140;0;0" keyTimes="0;0.07;0.73;0.731;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <!-- cmd2 typing duration: 13% of loop (~2.6s for 33 chars, ~79ms/char) -->
+    <clipPath id="cmd2"><rect x="0" y="0" width="0" height="400"><animate attributeName="width" values="0;0;300;300;0;0" keyTimes="0;0.32;0.45;0.73;0.731;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <!-- cmd3 typing duration: 2% of loop (~400ms for 5 chars, ~80ms/char) — was 7% (280ms/char), too slow -->
+    <clipPath id="cmd3"><rect x="0" y="0" width="0" height="400"><animate attributeName="width" values="0;0;55;55;0;0" keyTimes="0;0.65;0.67;0.73;0.731;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+
+    <!-- Yaml lines: sequential, 1% each, no overlap -->
+    <clipPath id="y1"><rect x="0" y="0" width="0" height="400"><animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.07;0.08;0.73;0.731;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="y2"><rect x="0" y="0" width="0" height="400"><animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.08;0.09;0.73;0.731;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="y3"><rect x="0" y="0" width="0" height="400"><animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.09;0.10;0.73;0.731;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="y4"><rect x="0" y="0" width="0" height="400"><animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.10;0.11;0.73;0.731;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="y5"><rect x="0" y="0" width="0" height="400"><animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.11;0.12;0.73;0.731;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="y6"><rect x="0" y="0" width="0" height="400"><animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.12;0.13;0.73;0.731;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="y7"><rect x="0" y="0" width="0" height="400"><animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.13;0.14;0.73;0.731;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="y8"><rect x="0" y="0" width="0" height="400"><animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.14;0.15;0.73;0.731;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+
+    <!-- Git log lines -->
+    <clipPath id="g1"><rect x="0" y="0" width="0" height="400"><animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.45;0.46;0.73;0.731;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="g2"><rect x="0" y="0" width="0" height="400"><animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.46;0.47;0.73;0.731;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="g3"><rect x="0" y="0" width="0" height="400"><animate attributeName="width" values="0;0;700;700;0;0" keyTimes="0;0.47;0.48;0.73;0.731;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  </defs>
+
+  <rect width="760" height="410" rx="10" fill="#1A1B26"/>
+
+  <rect width="760" height="30" rx="10" fill="#24283B"/>
+  <rect y="18" width="760" height="12" fill="#24283B"/>
+  <circle cx="18" cy="15" r="6" fill="#F7768E"/>
+  <circle cx="38" cy="15" r="6" fill="#E0AF68"/>
+  <circle cx="58" cy="15" r="6" fill="#9ECE6A"/>
+  <text x="380" y="19" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace" font-size="11" fill="#565F89">m2moiz — profile</text>
+
+  <g font-family="'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#C0CAF5">
+
+    <!-- Prompt 1 (static; remains visible through post-clear empty state so cleared terminal still has a prompt) -->
+    <text x="16" y="60">
+      <tspan fill="#7AA2F7">m2moiz</tspan><tspan fill="#565F89">:</tspan><tspan fill="#7DCFFF">~</tspan><tspan fill="#565F89"> $</tspan>
+    </text>
+
+    <!-- Cmd1: cat profile.yaml -->
+    <g clip-path="url(#cmd1)" transform="translate(88 42)">
+      <text y="18"><tspan fill="#9ECE6A">cat</tspan> <tspan fill="#C0CAF5">profile.yaml</tspan></text>
+    </g>
+
+    <rect y="47" x="88" width="8" height="16" fill="#C0CAF5" opacity="0">
+      <animate attributeName="x" values="88;228;228" keyTimes="0;0.07;1" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.001;0.16;0.17;1" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="1;0;1" dur="0.55s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- ─────────── Yaml output (no + prefix, plain cat format) ─────────── -->
+
+    <g clip-path="url(#y1)"><text x="16" y="90">
+      <tspan fill="#7DCFFF">name      </tspan><tspan fill="#565F89">:</tspan> <tspan fill="#C0CAF5">Muhammad Moiz</tspan>
+    </text></g>
+
+    <g clip-path="url(#y2)"><text x="16" y="110">
+      <tspan fill="#7DCFFF">role      </tspan><tspan fill="#565F89">:</tspan> <tspan fill="#C0CAF5">AI/ML Engineer</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">France</tspan>
+    </text></g>
+
+    <g clip-path="url(#y3)"><text x="16" y="130">
+      <tspan fill="#7DCFFF">focus     </tspan><tspan fill="#565F89">:</tspan> <tspan fill="#C0CAF5">Computer Vision</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">LLM Systems</tspan>
+    </text></g>
+
+    <g clip-path="url(#y4)"><text x="16" y="150">
+      <tspan fill="#7DCFFF">strength  </tspan><tspan fill="#565F89">:</tspan> <tspan fill="#C0CAF5">edge deployment</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">model compression</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">sub-100ms inference</tspan>
+    </text></g>
+
+    <g clip-path="url(#y5)"><text x="16" y="170">
+      <tspan fill="#7DCFFF">languages </tspan><tspan fill="#565F89">:</tspan> <tspan fill="#C0CAF5">C++</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">Python</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">TypeScript</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">Kotlin</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">Swift</tspan>
+    </text></g>
+
+    <g clip-path="url(#y6)"><text x="16" y="190">
+      <tspan fill="#7DCFFF">ml        </tspan><tspan fill="#565F89">:</tspan> <tspan fill="#C0CAF5">PyTorch</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">OpenCV</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">vLLM</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">LangChain</tspan>
+    </text></g>
+
+    <g clip-path="url(#y7)"><text x="16" y="210">
+      <tspan fill="#7DCFFF">platform  </tspan><tspan fill="#565F89">:</tspan> <tspan fill="#C0CAF5">FastAPI</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">AWS</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">GCP</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">Docker</tspan> <tspan fill="#565F89">·</tspan> <tspan fill="#C0CAF5">Android</tspan>
+    </text></g>
+
+    <g clip-path="url(#y8)"><text x="16" y="230">
+      <tspan fill="#7DCFFF">status    </tspan><tspan fill="#565F89">:</tspan> <tspan fill="#C0CAF5">open to interesting problems</tspan>
+    </text></g>
+
+    <!-- ─────────── Prompt 2 + cmd2 ─────────── -->
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.159;0.16;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
+      <text x="16" y="265">
+        <tspan fill="#7AA2F7">m2moiz</tspan><tspan fill="#565F89">:</tspan><tspan fill="#7DCFFF">~</tspan><tspan fill="#565F89"> $</tspan>
+      </text>
+    </g>
+
+    <!-- Cmd2: git log command with flags and pipe -->
+    <g clip-path="url(#cmd2)" transform="translate(88 247)">
+      <text y="18"><tspan fill="#9ECE6A">git</tspan> <tspan fill="#C0CAF5">log</tspan> <tspan fill="#7DCFFF">--all</tspan> <tspan fill="#7DCFFF">--oneline</tspan> <tspan fill="#565F89">|</tspan> <tspan fill="#9ECE6A">head</tspan> <tspan fill="#7DCFFF">-3</tspan></text>
+    </g>
+
+    <rect y="252" x="88" width="8" height="16" fill="#C0CAF5" opacity="0">
+      <animate attributeName="x" values="88;88;388;388" keyTimes="0;0.32;0.45;1" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.159;0.16;0.459;0.46;1" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="1;0;1" dur="0.55s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- ─────────── Git log output — scope tags yellow, rest white ─────────── -->
+
+    <g clip-path="url(#g1)"><text x="16" y="295">
+      <tspan fill="#9ECE6A">+</tspan> <tspan fill="#E0AF68">exp(cv)</tspan><tspan fill="#565F89">:</tspan> <tspan fill="#C0CAF5">int8 quantization −40% latency on jetson</tspan>
+    </text></g>
+
+    <g clip-path="url(#g2)"><text x="16" y="315">
+      <tspan fill="#9ECE6A">+</tspan> <tspan fill="#E0AF68">feat(llm)</tspan><tspan fill="#565F89">:</tspan> <tspan fill="#C0CAF5">vLLM routing layer with fallback chain</tspan>
+    </text></g>
+
+    <g clip-path="url(#g3)"><text x="16" y="335">
+      <tspan fill="#F7768E">-</tspan> <tspan fill="#E0AF68">feat</tspan><tspan fill="#565F89">:</tspan> <tspan fill="#414868">██████████████████████</tspan> <tspan fill="#565F89">[</tspan><tspan fill="#C0CAF5">redacted</tspan><tspan fill="#565F89">]</tspan>
+    </text></g>
+
+    <!-- ─────────── Prompt 3 + cmd3 "clear" ─────────── -->
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.479;0.48;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
+      <text x="16" y="370">
+        <tspan fill="#7AA2F7">m2moiz</tspan><tspan fill="#565F89">:</tspan><tspan fill="#7DCFFF">~</tspan><tspan fill="#565F89"> $</tspan>
+      </text>
+    </g>
+
+    <!-- Cmd3: clear -->
+    <g clip-path="url(#cmd3)" transform="translate(88 352)">
+      <text y="18"><tspan fill="#9ECE6A">clear</tspan></text>
+    </g>
+
+    <rect y="357" x="88" width="8" height="16" fill="#C0CAF5" opacity="0">
+      <animate attributeName="x" values="88;88;143;143" keyTimes="0;0.65;0.67;1" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.479;0.48;0.73;0.731;1" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="1;0;1" dur="0.55s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- ─────────── Empty-terminal cursor after clear (prompt 1 is always visible above, so together this reads as a fresh cleared terminal) ─────────── -->
+    <rect y="47" x="88" width="8" height="16" fill="#C0CAF5" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.731;0.732;0.95;1" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="1;0;1" dur="0.55s" repeatCount="indefinite"/>
+    </rect>
+
+  </g>
+</svg>
