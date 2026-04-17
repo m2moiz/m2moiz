@@ -156,6 +156,18 @@ Sunday        8 commits   ██░░░░░░░░░░░░░░░░
 ```
 <!--END_SECTION:waka-->
 
+---
+
+<!--
+  Quote banner — custom SVG at assets/quote.svg.
+  Types in once on page load (~6s), then a cursor blinks forever at the end.
+  Tokyo Night blue (#7AA2F7) matches the snake dark-mode palette.
+-->
+<div align="center">
+  <img src="./assets/quote.svg" alt='"Every year in tech brings me one step closer to a mountain, a flock of goats, and a kettle." ~ m2moiz' width="800"/>
+</div>
+
+---
 
 <!--
   Snake animation of your GitHub contribution graph.
