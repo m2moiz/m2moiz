@@ -4,7 +4,7 @@
   Transparent PNG reads cleanly on both dark and light GitHub themes.
 -->
 <div align="center">
-  <img src="./assets/hero-transparent.png" alt="profile hero" width="300"/>
+  <img src="./assets/hero-transparent.png" alt="profile hero" width="766"/>
 </div>
 
 # Hi there, I'm Muhammad — aka m2moiz <img src="https://github.com/SatYu26/SatYu26/raw/master/Assets/Hi.gif" width="30" alt="waving hand"/>
@@ -32,20 +32,13 @@
 ### 🎧 On repeat right now
 
 <!--
-  Spotify widget: activate via SETUP.md § Spotify. Until then this block renders as a broken image.
-  The reference profile uses the full-size widget (~400px) showing album art, track, artist, and a soundwave.
+  Spotify "Now Playing" widget, powered by kittinan/spotify-github-profile.
+  To swap themes (novatorem / natemoo-re / compact / default), re-authorize at
+  https://spotify-github-profile.kittinanx.com/ and replace the URL below.
 -->
-<!--
-  Spotify widget — uncomment after deploying your own Novatorem fork and replacing the URL.
-  Until then, show a clean "coming soon" badge instead of a broken image.
--->
-<img src="https://img.shields.io/badge/🎶_widget-coming_soon-1DB954?style=for-the-badge&logo=spotify&logoColor=white" alt="Spotify widget placeholder"/>
-
-<!--
-<a href="https://open.spotify.com/user/YOUR_ID">
-  <img src="https://YOUR-VERCEL-URL.vercel.app/api/spotify" alt="Spotify now playing"/>
+<a href="https://open.spotify.com/user/12135894701">
+  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=12135894701&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=true" alt="Spotify Now Playing"/>
 </a>
--->
 
 ---
 
