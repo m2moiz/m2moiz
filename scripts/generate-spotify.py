@@ -154,38 +154,42 @@ def _truncate(s: str, n: int) -> str:
 def render_equalizer(playing: bool) -> str:
     """Return SVG string for a row of green equalizer bars.
 
-    If playing, each bar pulses independently (different dur/begin/amplitude).
-    If not playing, bars are static-short.
+    Bars always animate — it's what makes the widget feel alive. We just vary
+    the amplitude and speed based on play state:
+      * playing   → full-amplitude (up to EQ_MAX_H), snappy timing
+      * idle      → half-amplitude, slower timing, more opacity variation
     """
     step = (EQ_X1 - EQ_X0) / EQ_BARS
     bars: list[str] = []
+    # Amplitude scale: idle bars are gentler but still visible.
+    amp_scale = 1.0 if playing else 0.55
+    speed_scale = 1.0 if playing else 1.8  # idle = slower
+    opacity = 1.0 if playing else 0.70
+
     for i in range(EQ_BARS):
         x = EQ_X0 + i * step
         # Pseudo-random but deterministic amplitudes so the wave looks natural.
-        a = 6 + (i * 7) % 14        # low point
-        b = 12 + (i * 11) % (EQ_MAX_H - 10)  # mid
-        c = EQ_MAX_H - (i * 5) % 8  # high point
-        dur = 0.7 + (i * 0.09) % 0.6
+        a = (6 + (i * 7) % 14) * amp_scale          # low point
+        b = (12 + (i * 11) % (EQ_MAX_H - 10)) * amp_scale  # mid
+        c = (EQ_MAX_H - (i * 5) % 8) * amp_scale    # high point
+        # Ensure minimum visibility so even the low-point bar is readable.
+        a = max(a, 5)
+        dur = (0.7 + (i * 0.09) % 0.6) * speed_scale
         begin = (i * 0.13) % 1.0
 
-        if playing:
-            # animate both height (grow upward) and y (so bottom stays on EQ_Y baseline)
-            heights = f"{a};{c};{b};{a}"
-            ys = ";".join(str(EQ_Y - h) for h in (a, c, b, a))
-            body = (
-                f'<animate attributeName="height" values="{heights}" '
-                f'dur="{dur:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite"/>'
-                f'<animate attributeName="y" values="{ys}" '
-                f'dur="{dur:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite"/>'
-            )
-            initial_h = a
-        else:
-            body = ""
-            initial_h = 4  # static short when paused
+        heights = f"{a:.1f};{c:.1f};{b:.1f};{a:.1f}"
+        ys = ";".join(f"{EQ_Y - h:.1f}" for h in (a, c, b, a))
+        body = (
+            f'<animate attributeName="height" values="{heights}" '
+            f'dur="{dur:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite"/>'
+            f'<animate attributeName="y" values="{ys}" '
+            f'dur="{dur:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite"/>'
+        )
 
+        # Initial state = low point so the first frame already looks sensible.
         bars.append(
-            f'<rect x="{x:.1f}" y="{EQ_Y - initial_h}" width="{EQ_BAR_W}" '
-            f'height="{initial_h}" rx="1.5" fill="{SPOTIFY_GREEN}">{body}</rect>'
+            f'<rect x="{x:.1f}" y="{EQ_Y - a:.1f}" width="{EQ_BAR_W}" '
+            f'height="{a:.1f}" rx="1.5" fill="{SPOTIFY_GREEN}" opacity="{opacity}">{body}</rect>'
         )
     return "\n    ".join(bars)
 
