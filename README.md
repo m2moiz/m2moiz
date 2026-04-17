@@ -164,7 +164,7 @@ Sunday        8 commits   ██░░░░░░░░░░░░░░░░
   Tokyo Night blue (#7AA2F7) matches the snake dark-mode palette.
 -->
 <div align="center">
-  <img src="./assets/quote.svg" alt='"Every year in tech brings me one step closer to a mountain, a flock of goats, and no Wi-Fi." ~ m2moiz' width="800"/>
+  <img src="./assets/quote.svg?v=2" alt='"Every year in tech brings me one step closer to a mountain, a flock of goats, and no Wi-Fi." ~ m2moiz' width="800"/>
 </div>
 
 ---
