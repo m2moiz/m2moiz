@@ -1,13 +1,13 @@
 {
   "last_activity": {
     "commits": 0,
-    "events": 70,
+    "events": 50,
     "repos_touched": 2
   },
-  "last_commits": 70,
-  "last_hours": 37.61,
-  "last_multiplier": 1.608,
-  "last_run_iso": "2026-04-24T08:15:11+00:00",
+  "last_commits": 65,
+  "last_hours": 35.22,
+  "last_multiplier": 1.506,
+  "last_run_iso": "2026-04-24T13:54:57+00:00",
   "last_seed": 202617,
   "weeks_run": 2
 }
