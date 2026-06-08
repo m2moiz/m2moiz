@@ -101,7 +101,7 @@
   (see scripts/generate-waka.py). DO NOT edit by hand; edits will be overwritten.
 -->
 <!--START_SECTION:wakabadge-->
-<img src="https://img.shields.io/badge/⏱_Code_Time-30%20hrs%2020%20mins%20this%20week-blue?style=for-the-badge&logo=wakatime&logoColor=white" alt="Code time this week: 30h 20m"/>
+<img src="https://img.shields.io/badge/⏱_Code_Time-29%20hrs%2045%20mins%20this%20week-blue?style=for-the-badge&logo=wakatime&logoColor=white" alt="Code time this week: 29h 45m"/>
 <!--END_SECTION:wakabadge-->
 
 ### 🦉 When I ship
@@ -119,37 +119,37 @@
 ⌚︎ Time Zone: Europe/Paris
 
 💬 Programming Languages:
-Python        14 hrs 24 mins   ██████████░░░░░░░░░░░░   47.49 %
-TypeScript     6 hrs 44 mins   █████░░░░░░░░░░░░░░░░░   22.23 %
-C++            3 hrs 32 mins   ███░░░░░░░░░░░░░░░░░░░   11.65 %
-Shell          1 hrs 45 mins   █░░░░░░░░░░░░░░░░░░░░░    5.75 %
-CMake           1 hrs 3 mins   █░░░░░░░░░░░░░░░░░░░░░    3.46 %
-Makefile       0 hrs 43 mins   █░░░░░░░░░░░░░░░░░░░░░    2.37 %
-Dockerfile     0 hrs 38 mins   ░░░░░░░░░░░░░░░░░░░░░░    2.08 %
-YAML           0 hrs 31 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.71 %
-JSON           0 hrs 28 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.53 %
-Markdown       0 hrs 16 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.88 %
-Git Config      0 hrs 8 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.42 %
-Rust            0 hrs 8 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.42 %
+Python        14 hrs 8 mins   ██████████░░░░░░░░░░░░   47.49 %
+TypeScript    6 hrs 37 mins   █████░░░░░░░░░░░░░░░░░   22.23 %
+C++           3 hrs 28 mins   ███░░░░░░░░░░░░░░░░░░░   11.65 %
+Shell         1 hrs 43 mins   █░░░░░░░░░░░░░░░░░░░░░    5.75 %
+CMake          1 hrs 2 mins   █░░░░░░░░░░░░░░░░░░░░░    3.46 %
+Makefile      0 hrs 42 mins   █░░░░░░░░░░░░░░░░░░░░░    2.37 %
+Dockerfile    0 hrs 37 mins   ░░░░░░░░░░░░░░░░░░░░░░    2.08 %
+YAML          0 hrs 31 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.71 %
+JSON          0 hrs 27 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.53 %
+Markdown      0 hrs 16 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.88 %
+Git Config     0 hrs 8 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.42 %
+Rust           0 hrs 7 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.42 %
 
 🔥 Editors:
-VS Code           25 hrs 4 mins   ██████████████████░░░░   82.65 %
-Neovim            2 hrs 16 mins   ██░░░░░░░░░░░░░░░░░░░░    7.48 %
-Android Studio    1 hrs 32 mins   █░░░░░░░░░░░░░░░░░░░░░    5.03 %
-Xcode             1 hrs 28 mins   █░░░░░░░░░░░░░░░░░░░░░    4.84 %
+VS Code           24 hrs 35 mins   ██████████████████░░░░   82.65 %
+Neovim             2 hrs 13 mins   ██░░░░░░░░░░░░░░░░░░░░    7.48 %
+Android Studio     1 hrs 30 mins   █░░░░░░░░░░░░░░░░░░░░░    5.03 %
+Xcode              1 hrs 26 mins   █░░░░░░░░░░░░░░░░░░░░░    4.84 %
 
 💻 Operating System:
-Mac            19 hrs 1 mins   ██████████████░░░░░░░░   62.71 %
-Arch Linux    11 hrs 19 mins   ████████░░░░░░░░░░░░░░   37.29 %
+Mac           18 hrs 39 mins   ██████████████░░░░░░░░   62.71 %
+Arch Linux     11 hrs 6 mins   ████████░░░░░░░░░░░░░░   37.29 %
 ```
 
 🌞 **I'm Most Productive at Night**
 
 ```text
 🌞 Morning     5 commits   ██░░░░░░░░░░░░░░░░░░░░    8.59 %
-🌆 Daytime    14 commits   █████░░░░░░░░░░░░░░░░░   22.87 %
+🌆 Daytime    13 commits   █████░░░░░░░░░░░░░░░░░   22.87 %
 🌃 Evening    20 commits   ████████░░░░░░░░░░░░░░   34.11 %
-🌙 Night      21 commits   ████████░░░░░░░░░░░░░░   34.43 %
+🌙 Night      20 commits   ████████░░░░░░░░░░░░░░   34.43 %
 ```
 
 📅 **I'm Most Productive on Wednesday**
