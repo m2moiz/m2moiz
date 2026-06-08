@@ -4,10 +4,10 @@
     "events": 27,
     "repos_touched": 3
   },
-  "last_commits": 39,
-  "last_hours": 24.2,
+  "last_commits": 60,
+  "last_hours": 30.33,
   "last_multiplier": 1.345,
-  "last_run_iso": "2026-06-07T19:41:30+00:00",
-  "last_seed": 202623,
-  "weeks_run": 8
+  "last_run_iso": "2026-06-08T04:47:59+00:00",
+  "last_seed": 202624,
+  "weeks_run": 9
 }
