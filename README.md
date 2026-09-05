@@ -101,7 +101,7 @@
   (see scripts/generate-waka.py). DO NOT edit by hand; edits will be overwritten.
 -->
 <!--START_SECTION:wakabadge-->
-<img src="https://img.shields.io/badge/⏱_Code_Time-44%20hrs%2035%20mins%20this%20week-blue?style=for-the-badge&logo=wakatime&logoColor=white" alt="Code time this week: 44h 35m"/>
+<img src="https://img.shields.io/badge/⏱_Code_Time-44%20hrs%2040%20mins%20this%20week-blue?style=for-the-badge&logo=wakatime&logoColor=white" alt="Code time this week: 44h 40m"/>
 <!--END_SECTION:wakabadge-->
 
 ### 🦉 When I ship
@@ -119,13 +119,13 @@
 ⌚︎ Time Zone: Europe/Paris
 
 💬 Programming Languages:
-Python        22 hrs 17 mins   ███████████░░░░░░░░░░░   49.97 %
-TypeScript     8 hrs 30 mins   ████░░░░░░░░░░░░░░░░░░   19.08 %
+Python        22 hrs 19 mins   ███████████░░░░░░░░░░░   49.97 %
+TypeScript     8 hrs 31 mins   ████░░░░░░░░░░░░░░░░░░   19.08 %
 C++            5 hrs 49 mins   ███░░░░░░░░░░░░░░░░░░░   13.03 %
 Shell          2 hrs 21 mins   █░░░░░░░░░░░░░░░░░░░░░    5.28 %
 CMake          1 hrs 28 mins   █░░░░░░░░░░░░░░░░░░░░░    3.27 %
 Makefile        1 hrs 8 mins   █░░░░░░░░░░░░░░░░░░░░░    2.53 %
-Dockerfile     0 hrs 54 mins   ░░░░░░░░░░░░░░░░░░░░░░    2.03 %
+Dockerfile     0 hrs 55 mins   ░░░░░░░░░░░░░░░░░░░░░░    2.03 %
 YAML           0 hrs 44 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.64 %
 JSON           0 hrs 33 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.23 %
 Markdown       0 hrs 27 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.01 %
@@ -133,14 +133,14 @@ Git Config     0 hrs 13 mins   ░░░░░░░░░░░░░░░░�
 Rust           0 hrs 11 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.42 %
 
 🔥 Editors:
-VS Code           36 hrs 18 mins   ██████████████████░░░░   81.43 %
-Neovim             3 hrs 36 mins   ██░░░░░░░░░░░░░░░░░░░░    8.08 %
+VS Code           36 hrs 22 mins   ██████████████████░░░░   81.43 %
+Neovim             3 hrs 37 mins   ██░░░░░░░░░░░░░░░░░░░░    8.08 %
 Xcode              2 hrs 21 mins   █░░░░░░░░░░░░░░░░░░░░░    5.25 %
 Android Studio     2 hrs 20 mins   █░░░░░░░░░░░░░░░░░░░░░    5.23 %
 
 💻 Operating System:
-Mac            27 hrs 7 mins   █████████████░░░░░░░░░   60.84 %
-Arch Linux    17 hrs 27 mins   █████████░░░░░░░░░░░░░   39.16 %
+Mac           27 hrs 10 mins   █████████████░░░░░░░░░   60.84 %
+Arch Linux    17 hrs 29 mins   █████████░░░░░░░░░░░░░   39.16 %
 ```
 
 🌞 **I'm Most Productive at Night**
