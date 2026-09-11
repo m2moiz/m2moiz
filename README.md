@@ -101,7 +101,7 @@
   (see scripts/generate-waka.py). DO NOT edit by hand; edits will be overwritten.
 -->
 <!--START_SECTION:wakabadge-->
-<img src="https://img.shields.io/badge/⏱_Code_Time-42%20hrs%2056%20mins%20this%20week-blue?style=for-the-badge&logo=wakatime&logoColor=white" alt="Code time this week: 42h 56m"/>
+<img src="https://img.shields.io/badge/⏱_Code_Time-33%20hrs%2032%20mins%20this%20week-blue?style=for-the-badge&logo=wakatime&logoColor=white" alt="Code time this week: 33h 32m"/>
 <!--END_SECTION:wakabadge-->
 
 ### 🦉 When I ship
@@ -119,49 +119,49 @@
 ⌚︎ Time Zone: Europe/Paris
 
 💬 Programming Languages:
-Python        20 hrs 14 mins   ██████████░░░░░░░░░░░░   47.13 %
-TypeScript      9 hrs 0 mins   █████░░░░░░░░░░░░░░░░░   20.97 %
-C++            5 hrs 37 mins   ███░░░░░░░░░░░░░░░░░░░   13.08 %
-Shell           2 hrs 3 mins   █░░░░░░░░░░░░░░░░░░░░░    4.79 %
-CMake          1 hrs 36 mins   █░░░░░░░░░░░░░░░░░░░░░    3.71 %
-Makefile       1 hrs 15 mins   █░░░░░░░░░░░░░░░░░░░░░    2.91 %
-Dockerfile      1 hrs 0 mins   █░░░░░░░░░░░░░░░░░░░░░    2.33 %
-YAML           0 hrs 46 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.79 %
-JSON           0 hrs 34 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.34 %
-Markdown       0 hrs 25 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.99 %
-Rust           0 hrs 13 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.51 %
-Git Config     0 hrs 11 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.44 %
+Python        15 hrs 49 mins   ██████████░░░░░░░░░░░░   47.13 %
+TypeScript      7 hrs 2 mins   █████░░░░░░░░░░░░░░░░░   20.97 %
+C++            4 hrs 23 mins   ███░░░░░░░░░░░░░░░░░░░   13.08 %
+Shell          1 hrs 36 mins   █░░░░░░░░░░░░░░░░░░░░░    4.79 %
+CMake          1 hrs 15 mins   █░░░░░░░░░░░░░░░░░░░░░    3.71 %
+Makefile       0 hrs 58 mins   █░░░░░░░░░░░░░░░░░░░░░    2.91 %
+Dockerfile     0 hrs 47 mins   █░░░░░░░░░░░░░░░░░░░░░    2.33 %
+YAML           0 hrs 36 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.79 %
+JSON           0 hrs 27 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.34 %
+Markdown       0 hrs 20 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.99 %
+Rust           0 hrs 10 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.51 %
+Git Config      0 hrs 9 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.44 %
 
 🔥 Editors:
-VS Code           35 hrs 22 mins   ██████████████████░░░░   82.36 %
-Neovim             3 hrs 15 mins   ██░░░░░░░░░░░░░░░░░░░░    7.59 %
-Xcode              2 hrs 12 mins   █░░░░░░░░░░░░░░░░░░░░░    5.14 %
-Android Studio      2 hrs 6 mins   █░░░░░░░░░░░░░░░░░░░░░    4.91 %
+VS Code           27 hrs 37 mins   ██████████████████░░░░   82.36 %
+Neovim             2 hrs 33 mins   ██░░░░░░░░░░░░░░░░░░░░    7.59 %
+Xcode              1 hrs 43 mins   █░░░░░░░░░░░░░░░░░░░░░    5.14 %
+Android Studio     1 hrs 39 mins   █░░░░░░░░░░░░░░░░░░░░░    4.91 %
 
 💻 Operating System:
-Mac           26 hrs 19 mins   █████████████░░░░░░░░░   61.28 %
-Arch Linux    16 hrs 37 mins   █████████░░░░░░░░░░░░░   38.72 %
+Mac           20 hrs 33 mins   █████████████░░░░░░░░░   61.28 %
+Arch Linux    12 hrs 59 mins   █████████░░░░░░░░░░░░░   38.72 %
 ```
 
 🌞 **I'm Most Productive at Night**
 
 ```text
-🌞 Morning     7 commits   ██░░░░░░░░░░░░░░░░░░░░    7.68 %
-🌆 Daytime    19 commits   █████░░░░░░░░░░░░░░░░░   21.41 %
-🌃 Evening    30 commits   ████████░░░░░░░░░░░░░░   34.62 %
-🌙 Night      32 commits   ████████░░░░░░░░░░░░░░   36.29 %
+🌞 Morning     5 commits   ██░░░░░░░░░░░░░░░░░░░░    7.68 %
+🌆 Daytime    15 commits   █████░░░░░░░░░░░░░░░░░   21.41 %
+🌃 Evening    24 commits   ████████░░░░░░░░░░░░░░   34.62 %
+🌙 Night      25 commits   ████████░░░░░░░░░░░░░░   36.29 %
 ```
 
 📅 **I'm Most Productive on Tuesday**
 
 ```text
-Monday       14 commits   ████░░░░░░░░░░░░░░░░░░   16.26 %
-Tuesday      15 commits   ████░░░░░░░░░░░░░░░░░░   17.50 %
-Wednesday    14 commits   ████░░░░░░░░░░░░░░░░░░   15.93 %
-Thursday     14 commits   ████░░░░░░░░░░░░░░░░░░   16.63 %
-Friday       14 commits   ████░░░░░░░░░░░░░░░░░░   16.03 %
-Saturday      8 commits   ██░░░░░░░░░░░░░░░░░░░░    8.99 %
-Sunday        8 commits   ██░░░░░░░░░░░░░░░░░░░░    8.64 %
+Monday       11 commits   ████░░░░░░░░░░░░░░░░░░   16.26 %
+Tuesday      12 commits   ████░░░░░░░░░░░░░░░░░░   17.50 %
+Wednesday    11 commits   ████░░░░░░░░░░░░░░░░░░   15.93 %
+Thursday     11 commits   ████░░░░░░░░░░░░░░░░░░   16.63 %
+Friday       11 commits   ████░░░░░░░░░░░░░░░░░░   16.03 %
+Saturday      6 commits   ██░░░░░░░░░░░░░░░░░░░░    8.99 %
+Sunday        6 commits   ██░░░░░░░░░░░░░░░░░░░░    8.64 %
 ```
 <!--END_SECTION:waka-->
 
