@@ -101,7 +101,7 @@
   (see scripts/generate-waka.py). DO NOT edit by hand; edits will be overwritten.
 -->
 <!--START_SECTION:wakabadge-->
-<img src="https://img.shields.io/badge/⏱_Code_Time-38%20hrs%2053%20mins%20this%20week-blue?style=for-the-badge&logo=wakatime&logoColor=white" alt="Code time this week: 38h 53m"/>
+<img src="https://img.shields.io/badge/⏱_Code_Time-38%20hrs%2048%20mins%20this%20week-blue?style=for-the-badge&logo=wakatime&logoColor=white" alt="Code time this week: 38h 48m"/>
 <!--END_SECTION:wakabadge-->
 
 ### 🦉 When I ship
@@ -119,9 +119,9 @@
 ⌚︎ Time Zone: Europe/Paris
 
 💬 Programming Languages:
-Python        19 hrs 37 mins   ███████████░░░░░░░░░░░   50.44 %
-TypeScript     7 hrs 54 mins   ████░░░░░░░░░░░░░░░░░░   20.32 %
-C++            3 hrs 59 mins   ██░░░░░░░░░░░░░░░░░░░░   10.23 %
+Python        19 hrs 34 mins   ███████████░░░░░░░░░░░   50.44 %
+TypeScript     7 hrs 53 mins   ████░░░░░░░░░░░░░░░░░░   20.32 %
+C++            3 hrs 58 mins   ██░░░░░░░░░░░░░░░░░░░░   10.23 %
 Shell          2 hrs 10 mins   █░░░░░░░░░░░░░░░░░░░░░    5.57 %
 CMake          1 hrs 22 mins   █░░░░░░░░░░░░░░░░░░░░░    3.53 %
 Makefile        1 hrs 2 mins   █░░░░░░░░░░░░░░░░░░░░░    2.67 %
@@ -133,14 +133,14 @@ Rust           0 hrs 11 mins   ░░░░░░░░░░░░░░░░�
 Git Config     0 hrs 10 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.44 %
 
 🔥 Editors:
-VS Code           32 hrs 16 mins   ██████████████████░░░░   82.99 %
-Neovim             2 hrs 49 mins   ██░░░░░░░░░░░░░░░░░░░░    7.23 %
+VS Code           32 hrs 12 mins   ██████████████████░░░░   82.99 %
+Neovim             2 hrs 48 mins   ██░░░░░░░░░░░░░░░░░░░░    7.23 %
 Android Studio     1 hrs 56 mins   █░░░░░░░░░░░░░░░░░░░░░    4.97 %
 Xcode              1 hrs 52 mins   █░░░░░░░░░░░░░░░░░░░░░    4.82 %
 
 💻 Operating System:
-Mac           23 hrs 41 mins   █████████████░░░░░░░░░   60.88 %
-Arch Linux    15 hrs 13 mins   █████████░░░░░░░░░░░░░   39.12 %
+Mac           23 hrs 37 mins   █████████████░░░░░░░░░   60.88 %
+Arch Linux    15 hrs 11 mins   █████████░░░░░░░░░░░░░   39.12 %
 ```
 
 🌞 **I'm Most Productive at Evening**
