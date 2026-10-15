@@ -101,7 +101,7 @@
   (see scripts/generate-waka.py). DO NOT edit by hand; edits will be overwritten.
 -->
 <!--START_SECTION:wakabadge-->
-<img src="https://img.shields.io/badge/⏱_Code_Time-34%20hrs%209%20mins%20this%20week-blue?style=for-the-badge&logo=wakatime&logoColor=white" alt="Code time this week: 34h 9m"/>
+<img src="https://img.shields.io/badge/⏱_Code_Time-33%20hrs%2053%20mins%20this%20week-blue?style=for-the-badge&logo=wakatime&logoColor=white" alt="Code time this week: 33h 53m"/>
 <!--END_SECTION:wakabadge-->
 
 ### 🦉 When I ship
@@ -119,28 +119,28 @@
 ⌚︎ Time Zone: Europe/Paris
 
 💬 Programming Languages:
-Python        17 hrs 42 mins   ███████████░░░░░░░░░░░   51.85 %
-TypeScript     6 hrs 18 mins   ████░░░░░░░░░░░░░░░░░░   18.42 %
-C++            3 hrs 39 mins   ██░░░░░░░░░░░░░░░░░░░░   10.68 %
-Shell          1 hrs 52 mins   █░░░░░░░░░░░░░░░░░░░░░    5.45 %
-CMake          1 hrs 15 mins   █░░░░░░░░░░░░░░░░░░░░░    3.66 %
-Makefile       0 hrs 57 mins   █░░░░░░░░░░░░░░░░░░░░░    2.77 %
+Python        17 hrs 34 mins   ███████████░░░░░░░░░░░   51.85 %
+TypeScript     6 hrs 15 mins   ████░░░░░░░░░░░░░░░░░░   18.42 %
+C++            3 hrs 37 mins   ██░░░░░░░░░░░░░░░░░░░░   10.68 %
+Shell          1 hrs 51 mins   █░░░░░░░░░░░░░░░░░░░░░    5.45 %
+CMake          1 hrs 14 mins   █░░░░░░░░░░░░░░░░░░░░░    3.66 %
+Makefile       0 hrs 56 mins   █░░░░░░░░░░░░░░░░░░░░░    2.77 %
 Dockerfile     0 hrs 41 mins   ░░░░░░░░░░░░░░░░░░░░░░    2.00 %
-YAML           0 hrs 34 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.65 %
+YAML           0 hrs 33 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.65 %
 JSON           0 hrs 32 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.56 %
 Markdown       0 hrs 22 mins   ░░░░░░░░░░░░░░░░░░░░░░    1.07 %
 Git Config     0 hrs 10 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.48 %
 Rust            0 hrs 8 mins   ░░░░░░░░░░░░░░░░░░░░░░    0.41 %
 
 🔥 Editors:
-VS Code           28 hrs 5 mins   ██████████████████░░░░   82.22 %
-Neovim            2 hrs 40 mins   ██░░░░░░░░░░░░░░░░░░░░    7.83 %
-Android Studio    1 hrs 44 mins   █░░░░░░░░░░░░░░░░░░░░░    5.08 %
-Xcode             1 hrs 40 mins   █░░░░░░░░░░░░░░░░░░░░░    4.87 %
+VS Code           27 hrs 51 mins   ██████████████████░░░░   82.22 %
+Neovim             2 hrs 39 mins   ██░░░░░░░░░░░░░░░░░░░░    7.83 %
+Android Studio     1 hrs 43 mins   █░░░░░░░░░░░░░░░░░░░░░    5.08 %
+Xcode              1 hrs 39 mins   █░░░░░░░░░░░░░░░░░░░░░    4.87 %
 
 💻 Operating System:
-Mac           20 hrs 26 mins   █████████████░░░░░░░░░   59.83 %
-Arch Linux    13 hrs 43 mins   █████████░░░░░░░░░░░░░   40.17 %
+Mac           20 hrs 16 mins   █████████████░░░░░░░░░   59.83 %
+Arch Linux    13 hrs 37 mins   █████████░░░░░░░░░░░░░   40.17 %
 ```
 
 🌞 **I'm Most Productive at Night**
